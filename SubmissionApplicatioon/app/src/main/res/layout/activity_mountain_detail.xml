@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/current_mountain"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/bromo"
+            android:scaleType="fitXY"
+            android:padding="6sp"/>
+
+        <TextView
+            android:id="@+id/mountain_nama_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="bottom"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:text="@string/mountain_name"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp"
+            android:text="@string/informasi_tambahan" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="@string/lokasi"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/lokasi_tabel"
+                    android:text="@string/lokasi_detail" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="@string/ketinggian"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/ketinggian_tabel"
+                    android:text="@string/ketinggian_detail" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="Status Gunung"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/status_detail"
+                    android:text="@string/status_detail"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="bottom"
+            android:textSize="20sp"
+            android:text="Baca Guide dari Pendaki"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_guides"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:background="@color/colorPrimaryDark"
+            tools:listitem="@layout/item_column_guides" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_back_to_main_activity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:text="KEMBALI KE DAFTAR GUNUNG"/>
+
+        <Button
+            android:id="@+id/btn_lookup_on_maps"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:text="LIHAT DI GOOGLE MAPS"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+

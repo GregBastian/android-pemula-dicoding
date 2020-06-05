@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SubmissionApplicatioon</string>
+    <string name="mountain_name">Nama Gunung</string>
+    <string name="mountain_location">Lokasi Gunung</string>
+    <string name="see_more">Liat Detail</string>
+    <string name="nama_lengkap">Gregorius Ivan Sebastian</string>
+    <string name="informasi_tambahan">Informasi Tambahan</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="lokasi_detail">lokasi_detail</string>
+    <string name="ketinggian">Ketinggian (m)</string>
+    <string name="ketinggian_detail">ketinggian_detail</string>
+    <string name="status_detail">status_detail</string>
+    <string name="nama_guide">Nama Guide</string>
+    <string name="kirim_feedback">Kirim Feedback</string>
+    <string name="mau_menghubungi_developer">Mau Menghubungi Developer?</string>
+</resources>
