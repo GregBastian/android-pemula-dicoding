@@ -20,8 +20,8 @@
 
         <TextView
             android:id="@+id/tv_mountain_name"
-            android:layout_width="0.7in"
-            android:layout_height="3.75mm"
+            android:layout_width="112dp"
+            android:layout_height="24dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="8dp"
             android:layout_marginTop="22dp"
@@ -35,8 +35,8 @@
 
         <TextView
             android:id="@+id/tv_mountain_location"
-            android:layout_height="2.75mm"
-            android:layout_width="0.7in"
+            android:layout_height="18dp"
+            android:layout_width="112dp"
             android:layout_gravity="bottom"
             android:layout_marginStart="8dp"
             android:layout_marginBottom="9.5dp"
@@ -54,9 +54,9 @@
             android:layout_width="120dp"
             android:layout_height="35dp"
             android:layout_gravity="end"
-            android:layout_marginTop="14mm"
+            android:layout_marginTop="88dp"
             android:layout_marginRight="1mm"
-            android:layout_weight="1"
+            android:layout_weight="6.4dp"
             android:text="@string/see_more"
             android:textSize="12sp" />
     </FrameLayout>
